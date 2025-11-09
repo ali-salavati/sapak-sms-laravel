@@ -4,6 +4,7 @@ namespace Sapak\Sms\Laravel;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
+use InvalidArgumentException;
 use Sapak\Sms\SapakClient;
 
 /**
@@ -52,7 +53,7 @@ class SapakServiceProvider extends ServiceProvider
 
             $apiKey = $config->get('sapak.api_key');
             if (!$apiKey || !is_string($apiKey)) {
-                throw new \InvalidArgumentException('Sapak API Key is not configured. Please publish the config or set SAPAK_API_KEY in your .env file.');
+                throw new InvalidArgumentException('Sapak API Key is not configured. Please publish the config or set SAPAK_API_KEY in your .env file.');
             }
 
             $guzzleConfig = $config->get('sapak.guzzle_config', []);
