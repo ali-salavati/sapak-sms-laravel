@@ -106,9 +106,9 @@ class SmsNotificationService
 
 ## 4. Calling Core SDK Methods
 
-This package is just a bridge. All core logic (sending messages, checking status, finding messages) resides in the [sapak-sms-php (Core SDK)](https://www.google.com/search?q=https://github.com/YOUR_USERNAME/sapak-sms-php).
+This package is just a bridge. All core logic (sending messages, checking status, finding messages) resides in the [sapak-sms-php (Core SDK)](https://github.com/ali-salavati/sapak-sms).
 
-For a complete list of methods and their required DTOs, please read the [**Core Package Documentation**](https://www.google.com/search?q=https://github.com/YOUR_USERNAME/sapak-sms-php/blob/main/README.md).
+For a complete list of methods and their required DTOs, please read the [**Core Package Documentation**](https://github.com/ali-salavati/sapak-sms/blob/main/README.md).
 
 **Example (Sending a Message):**
 
