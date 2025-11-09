@@ -1,6 +1,6 @@
 {
     "name": "salavati/sapak-sms-laravel",
-    "description": "The official Laravel integration for the Sapak SMS PHP SDK.",
+    "description": "The unofficial Laravel integration for the Sapak SMS PHP SDK.",
     "type": "library",
     "keywords": [
         "sapak",
