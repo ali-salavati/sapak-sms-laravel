@@ -1,0 +1,46 @@
+{
+    "name": "salavati/sapak-sms-laravel",
+    "description": "The official Laravel integration for the Sapak SMS PHP SDK.",
+    "type": "library",
+    "keywords": [
+        "sapak",
+        "sms",
+        "laravel",
+        "sdk"
+    ],
+    "homepage": "https://github.com/ali-salavati/sapak-sms-laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ali Salavati",
+            "email": "salavati.cuber@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/contracts": "^9.0 || ^10.0 || ^11.0",
+        "illuminate/support": "^9.0 || ^10.0 || ^11.0",
+        "salavati/sapak-sms-php": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sapak\\Sms\\Laravel\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sapak\\Sms\\Laravel\\SapakServiceProvider"
+            ],
+            "aliases": {
+                "Sapak": "Sapak\\Sms\\Laravel\\SapakFacade"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
